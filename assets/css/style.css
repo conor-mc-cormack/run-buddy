@@ -1,0 +1,43 @@
+/* Romoves default browser-enforced styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* setting the bodys text color */
+body {
+  color: #39a6b2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* applying styles to header */
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
+/* applied color change, text size and text boldness to h1 in header moved nav to the same level using inline instead of default(block) */
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0;
+  display: inline;
+}
+/* applied color change to a in the header and remover underline from links */
+header a {
+  text-decoration: none;
+  color: #fce138;
+}
+/* brought text to the right og the screen, added 7px of space on top and bottom and 0px of space on the left and right */
+header nav {
+  float: right;
+  margin: 7px 0;
+}
+/* made everything in a line from left to right instead of a list top to bottom */
+header nav ul li {
+  display: inline;
+}
+/* applied a margin of 30px between li elements, made them less bold and changed the font size */
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
