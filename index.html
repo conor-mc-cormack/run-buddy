@@ -35,7 +35,33 @@
     </header>
 
     <!-- hero/jumbotron -->
-    <section></section>
+    <section>
+      <div>
+        <h3>Get Started Today</h3>
+        <p>
+          Fill out this form and one of our trainers will schedual a consult
+        </p>
+        <!-- Create a form, label is the static text and input is the typed in text to fill in your details -->
+        <form>
+          <lable for="name">Enter full name</lable>
+          <input type="text" placeholder="Your Name" name="name" id="name" />
+          <label for="email">Enter email adress</label>
+          <input
+            type="text"
+            placeholder="Email Adress"
+            name="email"
+            id="email"
+          />
+          <label for="phone">Enter a telephone number</label>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            name="phone"
+            id="phone"
+          />
+        </form>
+      </div>
+    </section>
 
     <!-- "what we do" section -->
     <section>
@@ -60,6 +86,12 @@
     <!-- footer -->
     <footer>
       <h2>❤️ Made with love by Run Buddy.</h2>
+      <div>
+        <!-- creates a link to the privacy policy and <br/> breaks the line so the next word will be the line under -->
+        <a href="#">Read Our Privacy Policy</a><br />
+        <!-- &copy; is the tag for the copyright c symbol -->
+        &copy; 2019 Run Buddy, Inc.
+      </div>
     </footer>
   </body>
 </html>

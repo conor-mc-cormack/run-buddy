@@ -1,7 +1,8 @@
-/* Romoves default browser-enforced styles */
+/* Romoves default browser-enforced styles, tells all elements on the page not to have a border or margin */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* setting the bodys text color */
 body {
@@ -40,4 +41,27 @@ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
+}
+/* changed the footers backround color, made the footer the full width of the webpage */
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
+/*  */
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+/* moved div to right side, made gap between lines 1.5 the size of the font */
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+/* Change color of footer link */
+footer a {
+  color: #024e76;
 }
