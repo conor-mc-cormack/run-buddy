@@ -42,29 +42,6 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 22px;
 }
-/* changed the footers backround color, made the footer the full width of the webpage */
-footer {
-  background: #fce138;
-  width: 100%;
-  padding: 40px 35px;
-}
-/*  */
-footer h2 {
-  display: inline;
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-/* moved div to right side, made gap between lines 1.5 the size of the font */
-footer div {
-  float: right;
-  line-height: 1.5;
-  text-align: right;
-}
-/* Change color of footer link */
-footer a {
-  color: #024e76;
-}
 section {
   padding: 60px;
 }
@@ -203,4 +180,27 @@ section {
 }
 .text-right {
   text-align: right;
+}
+/* changed the footers backround color, made the footer the full width of the webpage */
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
+/*  */
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+/* moved div to right side, made gap between lines 1.5 the size of the font */
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+/* Change color of footer link */
+footer a {
+  color: #024e76;
 }
