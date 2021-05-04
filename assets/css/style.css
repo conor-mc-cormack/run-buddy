@@ -106,7 +106,7 @@ section {
 }
 /* radio buttons styling */
 .hero-form label {
-  margin 0 5px;
+  margin: 0 5px;
 }
 .hero-form button {
   color: #fce138;
@@ -159,7 +159,7 @@ section {
 }
 .steps p {
   color: #39a6b2;
-  font size: 23px;
+  font-size: 23px;
 }
 .steps span {
   font-size: 38px;
