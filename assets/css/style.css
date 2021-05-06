@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* setting the bodys text color */
 body {
   color: #39a6b2;
@@ -13,14 +14,17 @@ body {
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
+  /* flexbox style */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 /* applied color change, text size and text boldness to h1 in header moved nav to the same level using inline instead of default(block) */
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
-  display: inline;
 }
 /* applied color change to a in the header and remover underline from links */
 header a {
@@ -29,7 +33,6 @@ header a {
 }
 /* brought text to the right og the screen, added 7px of space on top and bottom and 0px of space on the left and right */
 header nav {
-  float: right;
   margin: 7px 0;
 }
 /* made everything in a line from left to right instead of a list top to bottom */
@@ -178,26 +181,61 @@ header nav ul li a {
 .text-right {
   text-align: right;
 }
+.contact {
+  text-align: center;
+  background: #024e76;
+}
+.contact h2 {
+  color: #fce138;
+}
 .contact-info iframe {
   width: 400px;
   height: 400px;
+}
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
+}
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #fce138;
 }
 footer {
   background: #fce138;
   width: 100%;
   padding: 40px 35px;
 }
-footer div {
-  float: right;
-  line-height: 1.5;
-  text-align: right;
-}
-footer h2 {
+
+#foot {
   display: inline;
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
 footer a {
   color: #024e76;
+}
+section {
+  padding: 60px;
 }
