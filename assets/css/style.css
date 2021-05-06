@@ -36,15 +36,20 @@ header nav {
   margin: 7px 0;
 }
 /* made everything in a line from left to right instead of a list top to bottom */
-header nav ul li {
-  display: inline;
-}
-/* applied a margin of 30px between li elements, made them less bold and changed the font size */
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw;
 }
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+/* applied a margin of 30px between li elements, made them less bold and changed the font size */
+
 /* hero style start */
 .hero {
   background-image: url("../images/hero-bg.jpg");
