@@ -20,6 +20,15 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* for safari */
+  position: -webkit-sticky;
+  /* makes the header stick to the top */
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 /* applied color change, text size and text boldness to h1 in header moved nav to the same level using inline instead of default(block) */
@@ -29,6 +38,8 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: #fce138;
+  /* adding shaddow */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* applied color change to a in the header and remover underline from links */
@@ -50,6 +61,16 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* adding hover class to the elements above */
+
+.header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 header nav ul {
@@ -89,6 +110,8 @@ footer a {
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -109,17 +132,20 @@ footer a {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* hero form styling */
 
 .hero-form {
   border: 3px solid #024e76;
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 /* Styling the form */
@@ -141,6 +167,15 @@ footer a {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  outline: none;
+}
+
+/* new rule for focus state */
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* radio buttons styling */
@@ -155,6 +190,13 @@ footer a {
   border: none;
   padding: 10px 30px;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+/* adding hover style to hero button */
+
+.hero-form button:hover {
+  background-color: #39a6b2;
 }
 
 /* what we do style */
@@ -187,6 +229,12 @@ footer a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+/* removing border from last child in steps class */
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .section-title {
@@ -323,6 +371,16 @@ footer a {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* adding new css rule for focus state */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -333,6 +391,14 @@ footer a {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+/* adding hover style to contact form button */
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 .contact-info > * {
@@ -377,6 +443,7 @@ section {
   header h1 {
     width: 100%;
     text-align: center;
+    position: relative;
   }
 
   header nav ul {
