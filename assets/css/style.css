@@ -84,12 +84,13 @@ header nav ul {
 
 footer {
   background: #024e76;
-  padding: 40px 35px;
+  padding: 40px 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   bottom: 0;
+  margin-top: 10%;
 }
 
 #foot {
