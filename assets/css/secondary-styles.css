@@ -1,5 +1,6 @@
 .hero {
-  background-position: bottom;
+  background-position: 80%;
+  background-attachment: fixed;
   height: auto;
   text-align: center;
   margin-bottom: 40px;
@@ -34,4 +35,8 @@
 .secondary-content li {
   color: #39a6b2;
   margin: 10px 0 10px 0;
+}
+
+footer h2 {
+  color: #fce138;
 }
